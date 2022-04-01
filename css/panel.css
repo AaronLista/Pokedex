@@ -1,0 +1,240 @@
+.glass{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.664);
+    z-index: 20; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+.close{
+    position: absolute;
+    position:fixed;
+    z-index: 30;
+    top: 0;
+    right:  0;
+    margin-top: 20px;
+    margin-right: 50px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    border-style: solid;
+    border-radius: 50%;
+}
+.infoP{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 20px;
+    width: 80%;
+    display: flex;
+    border-style: solid;
+    border-color: tomato;
+    overflow: auto;
+}
+.left{
+    background-color: rgb(255, 255, 255);
+    width: 33%;
+}
+.rigth{
+    background-color: rgb(212, 212, 212);
+    border-radius: 0px 20px 20px 0px;
+    width: 66%;
+}
+.poke{
+    text-align: center;
+}
+.poke img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: black;
+}
+.stats{
+    margin-top: 20px;
+}
+.stat{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(209, 209, 209);
+    border-radius: 20px;
+    height: 30px;
+    margin: 10px;
+}
+.stat span{
+    margin: 0px 30px;
+}
+.sprites{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+.sprites img{
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: black;
+    background-color: white;
+}
+figure{
+    text-align: center;
+    width: 20%;
+}
+
+.size{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.size span{
+    background-color: white;
+    padding: 5px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 20px;
+}
+.moves{
+    background-color: rgb(255, 255, 255);
+    margin: 20px;
+    border-radius: 20px;
+    border-style: solid;
+    padding: 5px;
+    height: 160px;
+    overflow-y: scroll;
+    overflow-x: unset;
+}
+.moves::-webkit-scrollbar{
+    width: 8px;
+}
+.moves::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background-color: gray;
+}
+.moves h3{
+    margin-left: 40px;
+}
+.move{
+    margin: 5px auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(209, 209, 209);
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.move .types{
+    margin: 0px;
+    text-align: center;
+}
+.f{
+    display: flex;
+    align-items: center;
+}
+.f span{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+@media screen and (max-width: 1075px) {
+    .moves{
+        font-size: auto;
+    }
+    .infoP{
+        margin: auto 0px;
+        width: 90%;
+    }
+}
+@media screen and (max-width: 1030px) {
+    .infoP{
+        margin: auto 0px;
+        width: 95%;
+    }
+    .move{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 920px) {
+    .glass{
+        width: 100vw;
+    }
+    .infoP{
+        display: block;
+        margin: auto 0px;
+        width: 90%;
+    }
+    .left{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .rigth{
+        width: 100%;
+        border-radius: 20px 20px 20px 20px;
+    }
+    .poke{
+        width: 50%;
+    }
+    .stat{
+        width: 100%;
+    }
+    .sprites img{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 725px){
+    .move{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 620px){
+    .move{
+        display: block;
+    }
+    .move span{
+        margin-bottom: 5px;
+    }
+    .infoP{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .left{
+        display: block;
+        width: 100%;
+    }
+    .poke{
+        margin: 10px auto;
+        width: 100%;
+    }
+    .stat{
+        margin: 10px auto;
+    }
+    .sprites{
+        font-size: 10px;
+    }
+    .move{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .move{
+        font-size: 11px;
+    }
+}
