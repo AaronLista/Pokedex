@@ -3,8 +3,8 @@ const ob = document.querySelector('#observer');
 const ob2 = document.getElementById('observer');
 const sc = document.querySelector('#screen');
 const glass = document.querySelector('#glass');
-intersectionOptions = {
-    threshold: 0.5
+const intersectionOptions = {
+    threshold: 0.1
 };
 const colors = {
     "bug": '#267408',
@@ -28,8 +28,7 @@ const colors = {
 };
 var loading = false;
 var i = 1,z=0,m=0;
-let nombre = "aaron"
-console.log(nombre.replaceAll('a','p'));
+
 const onIntersect = ([entry]) =>{
     z=0;
     if(!loading && entry.isIntersecting){
